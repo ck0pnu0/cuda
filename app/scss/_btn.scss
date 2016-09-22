@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	Buttons
+\* ------------------------------------------------------------ */
+
+.btn {
+	font-size: 18px; line-height: 1.2; text-transform: uppercase; color: $color-white; border-radius: 3px; padding: 22px; min-width: 290px; display: inline-block; position: relative; left:50%; top: 0; transform: translateX(-50%); color: $color-white; transition: all 0.4s;
+
+	&:hover {
+		color: $color-white; text-decoration: none; 
+	}
+ 
+	&.orange-btn {
+		background: $color-orange; border-bottom: 4px solid $color-orange-dark;
+
+		&:hover {
+			background: $color-orange-dark;
+		}
+	} 
+
+	&.blue-btn {
+		background: $color-green; color: $color-white;  border-bottom: 4px solid #14a58c; 
+
+		&:hover {
+			background: #14a58c; 
+		}
+	}
+}

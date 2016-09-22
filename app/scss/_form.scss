@@ -1,0 +1,69 @@
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form-row {
+	width: 882px; margin: 0 auto; font-weight: 400; color: $color-white; font-size: 18px; line-height: 1; padding-bottom: 28px;     
+	@include clearfix;
+
+	& input[type='text'],
+	& input[type='email'],
+	& textarea {
+		border: 0; background: rgba(0,0,0,0.2); width: 100%; display: block; padding: 18px 36px; height: 54px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-radius: 3px; font-size: 18px; line-height: 1; color: $color-white; 
+	} 
+
+	& textarea {
+		height: 200px; resize: vertical;
+	}
+
+	& ::-webkit-input-placeholder {
+   		color: $color-white;
+	}
+
+	& :-moz-placeholder { /* Firefox 18- */
+		color: $color-white;  
+	}
+
+	& ::-moz-placeholder {  /* Firefox 19+ */
+		color: $color-white;  
+	}
+
+	& :-ms-input-placeholder {  
+		color: $color-white;  
+	}
+
+	& ::-webkit-resizer {
+		width: 11px; height: 11px; background: url(images/temp/textarea-resize.png) no-repeat 0 0; 
+	}
+
+	& input[type='submit'] {
+		border: 0; border-bottom: 4px solid #299ec5; background: $color-blue-light; color: $color-white; display: block; padding: 17px 85px; font-weight: 18px; font-weight: 600; text-transform: uppercase; cursor: pointer; border-radius: 3px; line-height: 1.44; letter-spacing: 0.02; -webkit-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; margin: 32px auto 0;
+
+		&:hover,
+		&:active {
+			background: #299ec5; 
+		}
+	}
+}
+
+@media(max-width: $screen-xs-max){
+	.form-row {
+		padding-bottom: 0; 
+
+		& div {
+			margin-bottom: 28px; 
+		}
+
+		& input[type='submit'] {
+			max-width: 100%;
+		}
+
+		& ::-webkit-input-placeholder {
+	   		padding-top: 4px; 
+		}		
+
+		& :-ms-input-placeholder {  
+			padding-top: 4px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	Article
+\* ------------------------------------------------------------ */
+
+.article {
+	text-align: center; text-transform: uppercase; font-weight: 400; padding-bottom: 58px; font-size: 18px; 
+
+	& a {
+		color: #393939; text-decoration: none; display: block; -webkit-transition: all 0.4s; o-transition: all 0.4s; transition: all 0.4s; 
+
+		& img {
+			display: block; max-width: 100%; padding-bottom: 24px; 
+		}
+
+		& strong {
+			font-weight: 400;
+		}
+
+		&:hover {
+			color: #17c2a4; text-decoration: none; 			
+		}
+	}
+}
+
+@media(max-width: $screen-md-min){
+	.article {
+		width: 100%; text-align: center; 
+
+		& a img {
+			display: block; margin: 0 auto;
+		}
+	}
+}
+
+@media(max-width: $screen-xs-max){
+	.article {
+		font-size: 16px; 
+	}
+}

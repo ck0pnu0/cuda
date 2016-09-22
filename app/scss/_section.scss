@@ -1,0 +1,254 @@
+/* ------------------------------------------------------------ *\
+	Sections
+\* ------------------------------------------------------------ */
+
+.section {
+	padding: 110px 0; position: relative; 	
+
+	& h2 {
+		text-align: center; text-transform: none; padding-bottom: 15px; position: relative; display: block; margin-bottom: 17px; font-weight: 700; 
+
+		&:before {
+			content: ''; width: 86px; height: 4px; font-size: 0; line-height: 0; text-indent: -4004px; display: block; position: absolute; bottom: 0; left: 50%; margin-left: -43px; background: rgba(0,0,0,0.2);  
+		}
+	}
+
+	& .section-head {
+		padding-bottom: 65px; text-align: center; margin: 0 auto; font-size: 18px; line-height: 1.4; font-weight: 400; position: relative; z-index: 3; 
+
+		& h2 {
+			letter-spacing: 0.06em;
+		}
+	}
+
+	& .section-body {
+		@include clearfix; position: relative; z-index: 3; 
+
+		& h4 {
+			font-weight: 700; 
+		}
+	}
+
+	&:before {
+		content: ''; display: block; width: 100%; height: 100%; font-size: 0; line-height: 0; text-indent: -4004px; position: absolute; top: 0; left: 0; z-index: 1; opacity: 0.90;
+	}
+
+	&.section-welcome {
+		background: url(images/temp/welcome.jpg) no-repeat center center; -webkit-background-size: cover; 
+		        background-size: cover; background-attachment: fixed; padding-top: 226px; color: $color-white; padding-bottom: 140px; 
+
+		&:before {
+			background: $color-purple;
+		}
+
+		& .section-body {
+			padding: 0 86px; 
+		}
+
+		& h2 {
+			color: $color-white; padding-bottom: 45px; 
+
+			&:before {
+				display: none; 
+			}
+		}
+	}
+
+	&.section-services {
+		background: $color-green; color: $color-white; padding-bottom: 128px; 
+
+		& h2 {
+			color: $color-white;
+		}
+
+		& .section-head {
+			width: 640px; 
+		}
+
+		& .section-body {
+			padding-top: 12px; 
+		}
+	}
+
+	&.section-team {		
+		background: url(images/temp/team.jpg) no-repeat center center; -webkit-background-size: cover; 
+		        background-size: cover; background-attachment: fixed;
+
+		&:before {
+			background: $color-grey-light;
+		}
+
+		& .section-head {
+			width: 660px; 
+		}
+
+		& .section-body {
+			padding-top: 17px; 
+		}
+	}
+
+	&.section-skills {
+
+		& .section-head {
+			width: 580px; 
+		}
+	}
+
+	&.section-portfolio {
+		background: url(images/temp/portfolio.jpg) no-repeat center center; -webkit-background-size: cover; 
+		        background-size: cover; background-attachment: fixed;
+
+		&:before {
+			background: $color-orange-light; opacity: 0.95; 
+		}
+
+		& .section-head {
+			width: 540px; 
+		} 
+	}
+
+	&.section-testimonials {
+		color: $color-white; padding-bottom: 0; background: url(images/temp/testimonials.jpg) no-repeat center center; -webkit-background-size: cover; background-size: cover; background-attachment: fixed; 
+
+		&:before {
+			background: $color-pink;	
+		}
+
+		& .section-body {
+			padding-top: 18px; 
+		}
+	}
+
+	&.section-contact {
+		color: $color-white; background: url(images/temp/contact.jpg) no-repeat center center; -webkit-background-size: cover;   background-size: cover; background-attachment: fixed;
+
+		&:before {
+			background: $color-blue; opacity: 0.95;
+		}
+
+		& .section-head {
+			width: 850px; 
+		}
+
+		& .section-body {
+			padding-top: 13px;
+		}
+	}
+}
+
+@media (max-width: $screen-lg ) {
+	.section {
+
+		&.section-testimonials {
+			padding-bottom: 30px; 
+		}
+
+		&.section-contact .section-head {
+			width: auto; padding: 0 60px 65px;		
+		}
+
+		&.section-contact .section-body .form-row {
+			width: auto; 
+		}
+	}
+}
+
+@media (max-width: $screen-lg-min ) {
+	.section {
+
+		& h2 {
+			padding-bottom: 20px; 
+		}
+	}
+}
+
+@media (max-width: $screen-md-min ) {
+	.section {
+
+		& h2 {
+			padding-bottom: 20px; margin-bottom: 15px; 
+
+			& br {
+				display: none; 
+			}
+		}
+
+		& .section-head {
+			max-width: 100%;
+		}
+
+		&.section-welcome {
+			padding: 140px 0 100px; 
+
+			& h2 {
+				margin-bottom: 0; 
+			}
+		}
+
+		&.section-contact {
+			padding-bottom: 82px; 
+		}
+
+		&.section-services {
+			padding-bottom: 60px;
+		}
+
+		&.section-team {
+			padding-bottom: 60px; 
+		}
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.section {
+		padding: 80px 0 50px; 
+
+		&.section-welcome {
+			padding: 80px 0 50px; 
+		}
+
+		&.section-services {
+			padding-bottom: 0; 
+		}
+
+		&.section-welcome {
+			padding-top: 120px; 
+		}
+	
+		&.section-welcome .section-body,
+		& .section-body {
+			padding: 0; 
+		}
+
+		& .section-head,
+		&.section-team .section-head,
+		&.section-skills .section-head {
+			max-width: 100%;
+			width: auto; 
+		}
+
+		&.section-team {
+			padding-bottom: 0; 
+
+			& .section-head {
+				padding-bottom: 30px; 
+			}
+		}
+
+		&.section-skills {
+			padding-bottom: 10px; 
+
+			& .section-head {
+				padding-bottom: 40px; 
+			}
+		}
+
+		&.section-contact .section-head {
+			padding: 0 20px 30px; 
+		}
+
+		&.section-contact .section-body {
+			position: relative; margin: 0 -15px;
+		}
+	}
+}

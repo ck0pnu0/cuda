@@ -1,0 +1,17 @@
+/* ------------------------------------------------------------ *\
+	Skill
+\* ------------------------------------------------------------ */
+
+.skill {
+	text-align: center; 
+
+	& h4 {
+		text-transform: uppercase; 
+	}
+}
+
+@media (max-width: $screen-xs) {
+	.skill {
+		padding-bottom: 40px; 
+	}
+}

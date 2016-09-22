@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------ *\
+	Testimonail
+\* ------------------------------------------------------------ */
+
+.testimonial {
+	font-size: 21px;  line-height: 1.5; padding-bottom: 144px; 
+
+	& .testimonial-img {
+		float: left; padding-right: 48px; 
+
+		& img {
+			display: block; width: 96px; height: 96px; border-radius: 50%; 
+		} 
+	}
+
+	& .testimonial-cnt {
+		height: 100%; overflow: hidden; padding-right: 36px; 
+
+		& blockquote {
+			border: 0; padding: 0 0 14px; margin: 0; font-style: italic;
+
+			& p {
+				font-size: 21px;  line-height: 1.5; padding-bottom: 8px; letter-spacing: 0.02em;
+			}
+		}
+
+		& h4 {
+			font-weight: 700; text-transform: uppercase; padding: 0; margin: 0;
+		}
+
+		& h6 {
+			font-weight: 400; color: #ffdd99; font-size: 18px; line-height: 1.44; 
+		}
+	}
+}
+
+@media (max-width: $screen-lg ) {
+	.testimonial {
+		padding-bottom: 70px; 
+
+		& .testimonial-img {
+			padding-right: 20px; 
+		}
+
+		& .testimonial-cnt {
+			padding-right: 20px; 
+		}
+	}
+}
+
+@media (max-width: $screen-md-min ) {
+	.testimonial {
+
+		& .testimonial-cnt {
+			padding-right: 0; 
+
+			& blockquote p {
+				font-size: 18px; 
+			}
+		}
+	}
+}
+
+@media(max-width: $screen-xs-max){
+	.testimonial .testimonial-cnt {
+		overflow: visible; height: auto;
+	}
+}

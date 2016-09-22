@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	header
+\* ------------------------------------------------------------ */
+
+.header {
+	position: absolute; top: 0; left: 0; right: 0; padding: 57px 0; color: $color-white; z-index: 99; transition: all 0.4s;
+
+	&.fixed {
+		position: fixed; top: 0; left: 0; right: 0; padding: 21px 0; background: rgba(0,0,0,0.2); 
+	}	
+}
+
+@media (max-width: $screen-md) {
+	.header {
+		padding: 20px 0; 
+	}
+}
+
+@media(max-width: $screen-xs-max){
+	.header,
+	.header.fixed {
+		position: fixed; background: rgba(0,0,0,0.2); padding: 14px 0 8px;
+	}
+}
