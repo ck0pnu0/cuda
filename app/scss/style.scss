@@ -1,9 +1,6 @@
 // ***********************************
 // HELPERS
 // ***********************************
-/*@import "variables";
-@import "mixins";*/
-
 @import 'lib/bootstrap';
 @import 'variables';
 @import 'mixins';
@@ -13,35 +10,13 @@
 // ***********************************
 @import "reset";
 @import "base";
-/*@import "typography"; // typography and links
-@import "images";
-@import "icons";*/
-
 @import 'header';
 @import 'footer';
 
 // ***********************************
 // UI ELEMENTS
 // ***********************************
-/*@import "ui/lists";
-@import "ui/buttons";
-@import "ui/tables";
-@import "ui/forms";
-@import "ui/panels-notifications";*/
-
-// @import "ui/search";
-// @import "ui/pagination";
-// @import "ui/tabs";
-// @import "ui/sliders";
-// @import "ui/toggles";
-// @import "ui/progress-bars";
-// @import "ui/tool-tips";
-// @import "ui/modals";
-// @import "ui/accordions";
-// @import "ui/breadcrumbs";
-
 @import 'logo';
-@import 'nav';
 @import 'btn';
 @import 'form';
 
@@ -49,8 +24,6 @@
 // ***********************************
 // SECTIONS
 // ***********************************
-// @import "sections/404";
-
 @import 'section';
 @import 'services';
 @import 'team';
@@ -63,11 +36,10 @@
 // ***********************************
 // Navigation
 // ***********************************	
-/*@import "navigation";*/
+@import 'nav';
 
 // ***********************************
 // Fonts
 // ***********************************	
-
 @import 'https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,700i';
 @import 'font-awesome/font-awesome';
