@@ -178,30 +178,35 @@
 		}
 
 		&.section-welcome {
-			padding: 140px 0 100px; 
+			padding: 140px 0 100px; -webkit-background-size: auto 100%; background-size: auto 100%; background-attachment: scroll; 
 
 			& h2 {
 				margin-bottom: 0; 
 			}
 		}
 
+		&.section-testimonials,
+		&.section-portfolio {
+			-webkit-background-size: auto 100%; background-size: auto 100%; background-attachment: scroll; 
+		}
+
 		&.section-contact {
-			padding-bottom: 82px; 
+			padding-bottom: 82px; -webkit-background-size: auto 100%; background-size: auto 100%; background-attachment: scroll; 
 		}
 
 		&.section-services {
-			padding-bottom: 60px;
+			padding-bottom: 60px; 
 		}
 
 		&.section-team {
-			padding-bottom: 60px; 
+			padding-bottom: 60px; -webkit-background-size: auto 100%; background-size: auto 100%; background-attachment: scroll; 
 		}
 	}
 }
 
 @media (max-width: $screen-xs-max) {
 	.section {
-		padding: 80px 0 50px; 
+		padding: 80px 0 50px;
 
 		&.section-welcome {
 			padding: 80px 0 50px; 
@@ -212,7 +217,7 @@
 		}
 
 		&.section-welcome {
-			padding-top: 120px; 
+			padding-top: 120px;
 		}
 	
 		&.section-welcome .section-body,
@@ -228,7 +233,7 @@
 		}
 
 		&.section-team {
-			padding-bottom: 0; 
+			padding-bottom: 0;
 
 			& .section-head {
 				padding-bottom: 30px; 
